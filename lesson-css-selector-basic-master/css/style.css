@@ -1,25 +1,35 @@
 .mammals{
     color:red;
-    background-color: "lavenderBlush";
+    background-color: lavenderBlush;
+    font-weight: bold;
 }
 
 .birds{
     color:blue;
-    background-color: "lightGray";
+    background-color: lightGray;
+    font-style: italic;
 }
 
 .fish{
     color:orange;
-    background-color: "lightYellow";
+    background-color: lightYellow;
+    text-decoration: underline;
 }
 
+ul{
+    border: 3px dotted plum;
+    border-radius: 5px;
+}
 
+li{
+    border-top: seagreen 3px solid;
+}
 #mouse{
     color:gray;
 }
 
 #canary{
-    color: "orangeRed";
+    color: orangeRed;
 }
 
 #penguin{
@@ -42,7 +52,7 @@
 }
 
 #sheep{
-    color:"steelBlue";
+    color:steelBlue;
 }
 
 #parakeet{
