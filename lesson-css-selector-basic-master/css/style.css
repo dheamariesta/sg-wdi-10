@@ -3,7 +3,11 @@
     background-color: lavenderBlush;
     font-weight: bold;
 }
-
+h1{
+    background-color: maroon;
+    border: 15px dashed lightYellow;
+    padding: 10px;
+}
 .birds{
     color:blue;
     background-color: lightGray;
