@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+    html, body{
+        padding: 0;
+        margin: 0;
+    }
+        body{
+            height: 2000px;
+            background-color: #ccc;
+        }
+
+        .outer{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            position:relative;
+            /*absolute*/
+            /*fixed -- for menu that always stay at sidebar*/
+            /*relative*/
+            /*static -- default*/
+            top:0px;
+            left:400px;
+            /*display: ;*/
+            /*none vs block -- show up element only when necessary . when its none, it doesnt take up any space -- nested*/
+
+        }
+        .inner{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            /*if parent is relative, children posiiton:absolute change according to relative position of its parent*/
+            position: absolute;
+            top: 20px;
+            left: 20px;
+
+
+        }
+        .wrapper{
+            background-color: purple;
+            height: 500px;
+            width: 100px;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+<div class="wrapper"></div>
+    <div class="outer"></div>
+    <div class="inner"></div>
+
+</body>
+</html>
