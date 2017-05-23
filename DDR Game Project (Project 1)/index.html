@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dance Dance Revolution</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      canvas {
+        background: #7a7a7a;
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <canvas id = "myCanvas" width="500" height="650"></canvas>
+
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var context = canvas.getContext("2d");
+      var dy = 2;
+
+      var x = canvas.width-300;
+      var y = 0;
+
+      var DrawCube = function(){
+        context.beginPath();
+        context.rect(x, y, 150, 50);
+        context.fillStyle = "rgba(238,238,238,.4)";
+        context.fill();
+        setInterval(y+=dy, 30);
+        //y += dy;
+        context.closePath();
+      }
+
+      function drawBottomRow(){
+        context.beginPath();
+        //context.rect(canvas.width-450, canvas.height-50, 150, 50);
+        context.rect(canvas.width-300, canvas.height-50, 150, 50);
+        //context.rect(canvas.width-150, canvas.height-50, 150, 50);
+        context.fillStyle = "red";
+        context.fill();
+        context.closePath();
+      }
+
+
+      function draw(){
+        context.clearRect(0 , 0, canvas.width, canvas.height);
+        drawBottomRow();
+        //DrawCube();
+
+        //y += dy;
+
+        if (y > canvas.height){
+          y = 0;
+        }
+      }
+      setInterval(DrawCube, 1000);
+      setInterval(draw, 30);
+
+    </script>
+
+  </body>
+</html>
+atom io packages git-plus
